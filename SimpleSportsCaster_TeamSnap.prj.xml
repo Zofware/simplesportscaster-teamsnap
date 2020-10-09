@@ -1,8 +1,7 @@
-<TaskerData sr="" dvi="1" tv="5.9.1">
+<TaskerData sr="" dvi="1" tv="5.10.1">
 	<Profile sr="prof47" ve="2">
 		<cdate>1559979194903</cdate>
-		<clp>true</clp>
-		<edate>1554767710923</edate>
+		<edate>1582352383238</edate>
 		<id>47</id>
 		<mid0>39</mid0>
 		<App sr="con0" ve="2">
@@ -14,7 +13,8 @@
 	</Profile>
 	<Profile sr="prof48" ve="2">
 		<cdate>1559979194907</cdate>
-		<edate>1580165343903</edate>
+		<edate>1582352391077</edate>
+		<flags>2</flags>
 		<id>48</id>
 		<mid0>37</mid0>
 		<State sr="con0" ve="2">
@@ -58,17 +58,26 @@
 		</State>
 	</Profile>
 	<Project sr="proj0" ve="2">
+		<cdate>1559979114707</cdate>
+		<mdate>1559979114707</mdate>
+		<name>Base</name>
+		<Img sr="icon" ve="2">
+			<nme>mw_action_home</nme>
+		</Img>
+	</Project>
+	<Project sr="proj1" ve="2">
 		<cdate>1559966895879</cdate>
+		<mdate>1559979194907</mdate>
 		<name>SimpleSportsCaster TeamSnap</name>
-		<pids>48,47</pids>
-		<tids>42,44,35,34,46,36,43,38,41,37,45,39,40</tids>
+		<pids>47,48</pids>
+		<tids>34,35,36,37,38,39,40,41,42,43,44,45,46</tids>
 		<Img sr="icon" ve="2">
 			<uri>content://com.android.providers.media.documents/document/image%3A8706</uri>
 		</Img>
 	</Project>
 	<Task sr="task34">
 		<cdate>1545461254644</cdate>
-		<edate>1580165697447</edate>
+		<edate>1602221370973</edate>
 		<id>34</id>
 		<nme>TeamSnap.SetClock</nme>
 		<pri>100</pri>
@@ -82,6 +91,10 @@
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>1732635924</code>
@@ -131,31 +144,51 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Int sr="arg3" val="20"/>
 		</Action>
 		<Action sr="act10" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">TeamSnap.HideScoreboard</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
 			<code>1732635924</code>
-			<label>long press seconds</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<ActionId>%aicoordinates(%pickers2)</ActionId>
+					<ActionId>android:id/numberpicker_input</ActionId>
 					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>32</ActionType>
+					<ActionType>16</ActionType>
 					<ActionType-type>java.lang.String</ActionType-type>
-					<FieldSelectionType>5</FieldSelectionType>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<FieldSelectionType>1</FieldSelectionType>
 					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
 					<IsFirstAction>false</IsFirstAction>
 					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
 					<IsTaskerAction>false</IsTaskerAction>
 					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText></NearbyText>
+					<NearbyText>&lt;null&gt;</NearbyText>
 					<NearbyText-type>java.lang.String</NearbyText-type>
 					<Password>&lt;null&gt;</Password>
 					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
 					<StoredAction>&lt;null&gt;</StoredAction>
 					<StoredAction-type>java.lang.String</StoredAction-type>
 					<TextToWrite>&lt;null&gt;</TextToWrite>
 					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Point
-Value: %aicoordinates(%pickers2)
-Action : Long Click</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
+Value: android:id/numberpicker_input
+Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
 Error Code
@@ -167,7 +200,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>4ffb758b-92bf-458f-93a7-8e9941c4c30f</plugininstanceid>
+					<plugininstanceid>b3e0664e-d686-4e26-889e-03658e6a996d</plugininstanceid>
 					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
 					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
 					<plugintypeid-type>java.lang.String</plugintypeid-type>
@@ -175,46 +208,83 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			</Bundle>
 			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="20"/>
+			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act11" ve="7">
-			<code>1732635924</code>
-			<label>write seconds</label>
+		<Action sr="act12" ve="7">
+			<code>328</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
-					<ActionId>&lt;null&gt;</ActionId>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%kb_text
+Text
+Text present on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%kb_text_selected
+Selected Text
+Text selected on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%kb_text_after_cursor
+Text After Cursor
+Text after the cursor on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%kb_text_before_cursor
+Text Before Cursor
+Text before the cursor on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="500"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%clock</Str>
+			<Str sr="arg1" ve="3">%par1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>590</code>
+			<Str sr="arg0" ve="3">%clock</Str>
+			<Str sr="arg1" ve="3">:</Str>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>1732635924</code>
+			<label>write minutes</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ActionId>android:id/numberpicker_input</ActionId>
 					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>-1</ActionType>
+					<ActionType>-2</ActionType>
 					<ActionType-type>java.lang.String</ActionType-type>
-					<FieldSelectionType>2</FieldSelectionType>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
+					<FieldSelectionType>1</FieldSelectionType>
 					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
 					<IsFirstAction>false</IsFirstAction>
 					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
 					<IsTaskerAction>false</IsTaskerAction>
 					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
+					<NearbyText>Cancel</NearbyText>
 					<NearbyText-type>java.lang.String</NearbyText-type>
 					<Password>&lt;null&gt;</Password>
 					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
 					<StoredAction>&lt;null&gt;</StoredAction>
 					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>%clock2</TextToWrite>
+					<TextToWrite>%clock1</TextToWrite>
 					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Focus
-Text to Write : %clock2
-Action : Write</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
+Value: android:id/numberpicker_input
+Text to Write : %clock1
+Nearby Text: Cancel
+Action : Replace</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TextToWrite FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TextToWrite ActionId FieldSelectionType ActionType NearbyText plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>06396f9f-bacb-4581-832c-b27c1ce4d5c4</plugininstanceid>
+					<plugininstanceid>e9471c77-aabf-461d-8835-63043cb055b0</plugininstanceid>
 					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
 					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
 					<plugintypeid-type>java.lang.String</plugintypeid-type>
@@ -222,17 +292,60 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			</Bundle>
 			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="20"/>
+			<Int sr="arg3" val="23"/>
 		</Action>
-		<Action sr="act12" ve="7">
+		<Action sr="act5" ve="7">
+			<code>328</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%kb_text
+Text
+Text present on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%kb_text_selected
+Selected Text
+Text selected on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%kb_text_after_cursor
+Text After Cursor
+Text after the cursor on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%kb_text_before_cursor
+Text Before Cursor
+Text before the cursor on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Tab,Tab</Str>
+			<Int sr="arg2" val="250"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>328</code>
+			<label>write seconds</label>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%kb_text
+Text
+Text present on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%kb_text_selected
+Selected Text
+Text selected on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%kb_text_after_cursor
+Text After Cursor
+Text after the cursor on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%kb_text_before_cursor
+Text Before Cursor
+Text before the cursor on the current input, if any&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">replace(%clock2)</Str>
+			<Int sr="arg2" val="500"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
 			<code>1732635924</code>
 			<label>stupid step to make seconds stick</label>
 			<Bundle sr="arg0">
 				<Vals sr="val">
 					<ActionId>android:id/numberpicker_input</ActionId>
 					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>32</ActionType>
+					<ActionType>16</ActionType>
 					<ActionType-type>java.lang.String</ActionType-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
 					<FieldSelectionType>1</FieldSelectionType>
 					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
 					<IsFirstAction>false</IsFirstAction>
@@ -243,13 +356,17 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<NearbyText-type>java.lang.String</NearbyText-type>
 					<Password>&lt;null&gt;</Password>
 					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
 					<StoredAction>&lt;null&gt;</StoredAction>
 					<StoredAction-type>java.lang.String</StoredAction-type>
 					<TextToWrite>&lt;null&gt;</TextToWrite>
 					<TextToWrite-type>java.lang.String</TextToWrite-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
 Value: android:id/numberpicker_input
-Action : Long Click</com.twofortyfouram.locale.intent.extra.BLURB>
+Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
 Error Code
@@ -271,7 +388,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
 			<Int sr="arg3" val="20"/>
 		</Action>
-		<Action sr="act13" ve="7">
+		<Action sr="act8" ve="7">
 			<code>811079103</code>
 			<Bundle sr="arg0">
 				<Vals sr="val">
@@ -301,7 +418,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformGlobalAction</Str>
 			<Int sr="arg3" val="20"/>
 		</Action>
-		<Action sr="act14" ve="7">
+		<Action sr="act9" ve="7">
 			<code>1732635924</code>
 			<label>confirm</label>
 			<Bundle sr="arg0">
@@ -310,22 +427,29 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 					<ActionId-type>java.lang.String</ActionId-type>
 					<ActionType>16</ActionType>
 					<ActionType-type>java.lang.String</ActionType-type>
+					<EnableDisableAccessibilityService>&lt;null&gt;</EnableDisableAccessibilityService>
+					<EnableDisableAccessibilityService-type>java.lang.String</EnableDisableAccessibilityService-type>
 					<FieldSelectionType>1</FieldSelectionType>
 					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
 					<IsFirstAction>false</IsFirstAction>
 					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
 					<IsTaskerAction>false</IsTaskerAction>
 					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
+					<NearbyText>Set Clock</NearbyText>
 					<NearbyText-type>java.lang.String</NearbyText-type>
 					<Password>&lt;null&gt;</Password>
 					<Password-type>java.lang.String</Password-type>
+					<RepeatInterval>&lt;null&gt;</RepeatInterval>
+					<RepeatInterval-type>java.lang.String</RepeatInterval-type>
+					<RepeatTimes>&lt;null&gt;</RepeatTimes>
+					<RepeatTimes-type>java.lang.String</RepeatTimes-type>
 					<StoredAction>&lt;null&gt;</StoredAction>
 					<StoredAction-type>java.lang.String</StoredAction-type>
 					<TextToWrite>&lt;null&gt;</TextToWrite>
 					<TextToWrite-type>java.lang.String</TextToWrite-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
 Value: com.teamsnap.teamsnap:id/scoreboard_soccer_wheel_set_clock
+Nearby Text: Set Clock
 Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
@@ -334,248 +458,11 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 Error Message
 Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
 					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType NearbyText plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
 					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
 					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
 					<plugininstanceid>65af8a38-36c8-4ca2-8028-3c8af5e8d1a2</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="20"/>
-		</Action>
-		<Action sr="act15" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">TeamSnap.HideScoreboard</Str>
-			<Int sr="arg1">
-				<var>%priority</var>
-			</Int>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%clock</Str>
-			<Str sr="arg1" ve="3">%par1</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>590</code>
-			<Str sr="arg0" ve="3">%clock</Str>
-			<Str sr="arg1" ve="3">:</Str>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>1732635924</code>
-			<label>open numpad</label>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<ActionId>android:id/numberpicker_input</ActionId>
-					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>32</ActionType>
-					<ActionType-type>java.lang.String</ActionType-type>
-					<FieldSelectionType>1</FieldSelectionType>
-					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>false</IsTaskerAction>
-					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
-					<NearbyText-type>java.lang.String</NearbyText-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<StoredAction>&lt;null&gt;</StoredAction>
-					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>&lt;null&gt;</TextToWrite>
-					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Id
-Value: android:id/numberpicker_input
-Action : Long Click</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>c66a5354-4e09-481b-b02c-8244ea6c6403</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="20"/>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>1040876951</code>
-			<label>ui query</label>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<AppPackage></AppPackage>
-					<AppPackage-type>java.lang.String</AppPackage-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<OnlyClickable>true</OnlyClickable>
-					<OnlyClickable-type>java.lang.Boolean</OnlyClickable-type>
-					<OnlyVisible>true</OnlyVisible>
-					<OnlyVisible-type>java.lang.Boolean</OnlyVisible-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<Regex>false</Regex>
-					<Regex-type>java.lang.Boolean</Regex-type>
-					<UIUpdateFields>&lt;null&gt;</UIUpdateFields>
-					<UIUpdateFields-type>java.lang.String</UIUpdateFields-type>
-					<UIUpdateText>&lt;null&gt;</UIUpdateText>
-					<UIUpdateText-type>java.lang.String</UIUpdateText-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Only Visible: true
-Only Clickable: true</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%aiapp
-App Name
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%aicoordinates()
-Element Coordinates
-List of coordinates in the x,y format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%aiid()
-Element Ids
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%aipackage
-App Package Name
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%aitext()
-Element Texts
-&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>3b93dcec-8e03-4a82-a1d8-9d03648e3c1a</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentUIQuery</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigUIQuery</Str>
-			<Int sr="arg3" val="20"/>
-		</Action>
-		<Action sr="act6" ve="7">
-			<code>547</code>
-			<label>get pickers</label>
-			<Str sr="arg0" ve="3">%pickers</Str>
-			<Str sr="arg1" ve="3">%aiid(#?~Rnumberpicker_input)</Str>
-			<Int sr="arg2" val="1"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5"/>
-		</Action>
-		<Action sr="act7" ve="7">
-			<code>590</code>
-			<Str sr="arg0" ve="3">%pickers</Str>
-			<Str sr="arg1" ve="3">,</Str>
-			<Int sr="arg2" val="0"/>
-		</Action>
-		<Action sr="act8" ve="7">
-			<code>1732635924</code>
-			<label>long press minutes</label>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<ActionId>%aicoordinates(%pickers1)</ActionId>
-					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>32</ActionType>
-					<ActionType-type>java.lang.String</ActionType-type>
-					<FieldSelectionType>5</FieldSelectionType>
-					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>false</IsTaskerAction>
-					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText></NearbyText>
-					<NearbyText-type>java.lang.String</NearbyText-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<StoredAction>&lt;null&gt;</StoredAction>
-					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>&lt;null&gt;</TextToWrite>
-					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Point
-Value: %aicoordinates(%pickers1)
-Action : Long Click</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>ActionId FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>4ffb758b-92bf-458f-93a7-8e9941c4c30f</plugininstanceid>
-					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
-					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
-					<plugintypeid-type>java.lang.String</plugintypeid-type>
-				</Vals>
-			</Bundle>
-			<Str sr="arg1" ve="3">com.joaomgcd.autoinput</Str>
-			<Str sr="arg2" ve="3">com.joaomgcd.autoinput.activity.ActivityConfigPerformAction</Str>
-			<Int sr="arg3" val="20"/>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>1732635924</code>
-			<label>write minutes</label>
-			<Bundle sr="arg0">
-				<Vals sr="val">
-					<ActionId>&lt;null&gt;</ActionId>
-					<ActionId-type>java.lang.String</ActionId-type>
-					<ActionType>-1</ActionType>
-					<ActionType-type>java.lang.String</ActionType-type>
-					<FieldSelectionType>2</FieldSelectionType>
-					<FieldSelectionType-type>java.lang.String</FieldSelectionType-type>
-					<IsFirstAction>false</IsFirstAction>
-					<IsFirstAction-type>java.lang.Boolean</IsFirstAction-type>
-					<IsTaskerAction>false</IsTaskerAction>
-					<IsTaskerAction-type>java.lang.Boolean</IsTaskerAction-type>
-					<NearbyText>&lt;null&gt;</NearbyText>
-					<NearbyText-type>java.lang.String</NearbyText-type>
-					<Password>&lt;null&gt;</Password>
-					<Password-type>java.lang.String</Password-type>
-					<StoredAction>&lt;null&gt;</StoredAction>
-					<StoredAction-type>java.lang.String</StoredAction-type>
-					<TextToWrite>%clock1</TextToWrite>
-					<TextToWrite-type>java.lang.String</TextToWrite-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>Type: Focus
-Text to Write : %clock1
-Action : Write</com.twofortyfouram.locale.intent.extra.BLURB>
-					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%err
-Error Code
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%errmsg
-Error Message
-Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/b&amp;gt; and the action ends in error&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
-					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>TextToWrite FieldSelectionType ActionType plugininstanceid plugintypeid </net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
-					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
-					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
-					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
-					<plugininstanceid>06396f9f-bacb-4581-832c-b27c1ce4d5c4</plugininstanceid>
 					<plugininstanceid-type>java.lang.String</plugininstanceid-type>
 					<plugintypeid>com.joaomgcd.autoinput.intent.IntentPerformAction</plugintypeid>
 					<plugintypeid-type>java.lang.String</plugintypeid-type>
@@ -815,7 +702,7 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 	</Task>
 	<Task sr="task36">
 		<cdate>1544994865614</cdate>
-		<edate>1580165756070</edate>
+		<edate>1582352655422</edate>
 		<id>36</id>
 		<nme>TeamSnap.SetPeriod</nme>
 		<pri>100</pri>
@@ -829,6 +716,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>1732635924</code>
@@ -1001,6 +892,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>547</code>
@@ -1184,6 +1079,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1203,6 +1102,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1222,6 +1125,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1241,6 +1148,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1260,6 +1171,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1279,6 +1194,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1298,6 +1217,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
 					<lhs>%arpar1</lhs>
@@ -1323,6 +1246,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
@@ -1485,11 +1412,15 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task39">
 		<cdate>1552768727904</cdate>
-		<edate>1554767546079</edate>
+		<edate>1582352383238</edate>
 		<id>39</id>
 		<nme>TeamSnap.KeepScreenOn</nme>
 		<Action sr="act0" ve="7">
@@ -1877,6 +1808,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>1040876951</code>
@@ -2064,11 +1999,15 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task42">
 		<cdate>1544994865614</cdate>
-		<edate>1554767501174</edate>
+		<edate>1582352643828</edate>
 		<id>42</id>
 		<nme>TeamSnap.StopClock</nme>
 		<pri>100</pri>
@@ -2082,6 +2021,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>1040876951</code>
@@ -2262,6 +2205,10 @@ Action : Click</com.twofortyfouram.locale.intent.extra.BLURB>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task43">
@@ -2502,6 +2449,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
@@ -2569,6 +2520,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>1732635924</code>
@@ -2627,6 +2582,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task45">
@@ -2645,6 +2604,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
@@ -2712,6 +2675,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>1732635924</code>
@@ -2770,6 +2737,10 @@ Only available if you select &amp;lt;b&amp;gt;Continue Task After Error&amp;lt;/
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
 	<Task sr="task46">
